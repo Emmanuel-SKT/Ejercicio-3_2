@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.ejercicio3_2.PrimaryController">
+   <children>
+      <Label layoutX="146.0" layoutY="20.0" text="La Liebre y la Tortuga">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      
+      <Button fx:id="btnIniciar" layoutX="170.0" layoutY="55.0" onAction="#btnIniciarOnAction" text="¡Iniciar Carrera!" />
+      
+      <Label fx:id="lblLiebre" layoutX="50.0" layoutY="110.0" text="La Liebre: Preparada..." />
+      <ProgressBar fx:id="progLiebre" layoutX="50.0" layoutY="135.0" prefHeight="20.0" prefWidth="350.0" progress="0.0" />
+      
+      <Label fx:id="lblTortuga" layoutX="50.0" layoutY="190.0" text="La Tortuga: Preparada..." />
+      <ProgressBar fx:id="progTortuga" layoutX="50.0" layoutY="215.0" prefHeight="20.0" prefWidth="350.0" progress="0.0" />
+   </children>
+   <padding>
+      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</VBox>
